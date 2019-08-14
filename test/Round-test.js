@@ -48,4 +48,17 @@ describe('Round', () => {
     expect(round.takeTurn('sea otter')).to.eql('correct!');
   })
 
+  it('should calculate percentage of correct guesses', () => {
+    round.takeTurn('Fitzgerald');
+    round.takeTurn('gallbladder');
+    expect(round.calculatePercentCorrect()).to.equal(50);
+  })
+
+  it.only('should return output saying game is over and percentage of correct answers', () => {
+    round.takeTurn('Fitzgerald');
+    round.takeTurn('gallbladder');
+    round.calculatePercentCorrect();
+    expect(round.endRound()).to.equal('** Round over! ** You answered 50% of the questions correctly')
+  })
+
 });
