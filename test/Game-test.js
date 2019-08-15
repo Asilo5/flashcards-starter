@@ -12,10 +12,5 @@ describe ('Game', () => {
     expect(Game).to.be.a('function');
   })
 
-  it.only('should create cards', () => {
-    const game = new Game();
-    expect(game.printMessage()).to.equal();
-  })
-
 })
 
