@@ -54,7 +54,7 @@ describe('Round', () => {
     expect(round.calculatePercentCorrect()).to.equal(50);
   })
 
-  it.only('should return output saying game is over and percentage of correct answers', () => {
+  it('should return output saying game is over and percentage of correct answers', () => {
     round.takeTurn('Fitzgerald');
     round.takeTurn('gallbladder');
     round.calculatePercentCorrect();
