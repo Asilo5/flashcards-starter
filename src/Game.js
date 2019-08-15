@@ -13,9 +13,6 @@ class Game {
 
   start() {
     let newDeck = new Deck(prototypeQuestions.map((card) => new Card(card)));
-    // inside of the deck we are instantiating the new cards
-    // we are storing each card inside the deck by instantiating them
-    // so we have the deck of cards stored
     this.currentRound = new Round(newDeck, this);
     this.printMessage(newDeck, this.currentRound);
     this.printQuestion(this.currentRound);
