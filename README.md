@@ -18,3 +18,7 @@ This game was built with vanilla Javascript, emphesizing on Test Driven Developm
 
 ## Have fun! 
 
+### lightning-talk
+
+![gif example](https://github.com/Asilo5/lightning-talk/blob/master/part1.gif)
+
